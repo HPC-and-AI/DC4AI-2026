@@ -970,20 +970,21 @@ body {
   border-spacing: 0 8px;
 }
 .agenda td {
-  vertical-align: middle;
-  padding: 16px 20px;
+  vertical-align: top;
+  padding: 14px 18px;
   border: none;
   border-radius: 6px;
   font-size: 110%;
 }
 .agenda .agenda-time {
   width: 22%;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
+  padding-right: 8px;
 }
 .agenda .agenda-activity {
   text-align: left;
-  padding-left: 24px;
+  padding-left: 0;
 }
 .agenda tr:nth-child(even) td {
   background-color: #cce5ff;
@@ -1001,8 +1002,23 @@ body {
   .agenda td {
     padding: 12px 10px;
     font-size: 100%;
+    vertical-align: top;
   }
   .agenda .agenda-activity {
-    padding-left: 12px;
+    padding-left: 0;
   }
+}
+
+/* Agenda info line (date/time/location above table) */
+.agenda-info {
+  font-size: 110%;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  text-align: left;
+  padding-left: 0;
+}
+.agenda-info a {
+  color: #ff6738;
+  text-decoration: none;
 }
