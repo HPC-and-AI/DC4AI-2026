@@ -954,3 +954,48 @@ body {
 .schedule-item {
     margin: 10px 0;
 }
+
+/* ===== Agenda Table (Tentative Program) ===== */
+.agenda {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+.agenda td {
+  vertical-align: middle;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 110%;
+}
+.agenda .agenda-time {
+  width: 22%;
+  text-align: center;
+  font-weight: bold;
+}
+.agenda .agenda-activity {
+  text-align: left;
+  padding-left: 24px;
+}
+.agenda tr:nth-child(even) td {
+  background-color: #cce5ff;
+}
+.agenda tr:nth-child(odd) td {
+  background-color: #e8f4f8;
+}
+@media screen and (max-width: 760px) {
+  .agenda .agenda-time {
+    width: 35%;
+  }
+  .agenda .agenda-activity {
+    width: 65%;
+  }
+  .agenda td {
+    padding: 12px 10px;
+    font-size: 100%;
+  }
+  .agenda .agenda-activity {
+    padding-left: 12px;
+  }
+}
