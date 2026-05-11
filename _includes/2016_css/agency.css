@@ -358,6 +358,7 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 header .intro-text .intro-heading {
@@ -367,6 +368,7 @@ header .intro-text .intro-heading {
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
+    text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
 }
 
 header .intro-text .intro-subtitle {
@@ -376,6 +378,7 @@ header .intro-text .intro-subtitle {
     line-height: 1.4;
     color: #ffffff;
     font-weight: 500;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 @media(min-width:768px) {    
@@ -390,6 +393,7 @@ header .intro-text .intro-subtitle {
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
 
     header .intro-text .intro-heading {
@@ -399,6 +403,7 @@ header .intro-text .intro-subtitle {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+        text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
     }
 
     header .intro-text .intro-subtitle {
@@ -408,6 +413,7 @@ header .intro-text .intro-subtitle {
         line-height: 1.5;
         color: #ffffff;
         font-weight: 500;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
 }
 
