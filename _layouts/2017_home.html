@@ -3,7 +3,6 @@
 
   {% include 2016_data/head.html %}
 
-
     <body id="page-top" class="index">
 
     {% include 2017_data/header-home.html %}
@@ -12,24 +11,220 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">HDPC 2026</div>
-                <div class="intro-subtitle">The 1st Tutorial of "When the Error-Bounded Lossy Compression Meets Large-Scale AI Model Training and Fine-Tuning in Federated Environments"</div>
-                <div class="intro-lead-in">July 13-16, 2026</div>
-                <div class="intro-lead-in">Cleveland, OH, USA</div>
-                <a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-heading"><font size="10">DC4AI 2026</font><br></div>
+                <div class="intro-lead-in">The International Workshop on Data Compression for AI and Big Data Applications</div>
+                <div class="intro-lead-in">&nbsp;</div>
+                <div class="intro-lead-in">September 28 - October 1, 2026</div>
+                <div class="intro-lead-in">Singapore</div>
             </div>
         </div>
     </header>
 
-    {% include 2017_data/intro.html %}
-    {% include 2017_data/topics.html %}
-    {% include 2017_data/submission.html %}
-    {% include 2017_data/speakers.html %}
-    {% include 2017_data/about.html %}
-    {% include 2017_data/sponsors.html %}
-    {% include 2016_data/contact.html %}
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">DC4AI</h2>
+                </div>
+            </div>
+            <h4 align="center">In cooperation with <a target="_blank" href="https://www.acm.org/">ACM</a></h4>
+            <div align="center"><img class="block" src="{{ site.baseurl }}/images/acm.png" alt="" height="45"/></div>
+            <h4 align="center">Held in conjunction with <a target="_blank" href="https://icpp2026.github.io/">ICPP 2026:</a> The 55th International Conference on Parallel Processing</h4>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Tentative Agenda</h2>
+                    <h4 class="section-subheading text-muted"></h4>
+                </div>
+            </div>
+            <strong>Half-Day Workshop</strong> <br/><br/>
+
+        <table class="agenda">
+          <tr>
+            <td class="agenda-time">9:00<br>9:05</td>
+            <td class="agenda-activity">Welcome &amp; Introduction</td>
+          </tr>
+          <tr>
+            <td class="agenda-time">9:05<br>10:00</td>
+            <td class="agenda-activity"><strong>Invited Talk</strong><br>Dr. Sheng Di, Argonne National Laboratory</td>
+          </tr>
+          <tr>
+            <td class="agenda-time">10:00<br>12:30</td>
+            <td class="agenda-activity"><strong>Paper Presentations</strong></td>
+          </tr>
+          <tr>
+            <td class="agenda-time">12:30<br>12:35</td>
+            <td class="agenda-activity">Closing Remarks</td>
+          </tr>
+        </table>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="abstract" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Topics</h2>
+                    <h4 class="section-subheading text-muted"></h4>
+                </div>
+            </div>
+            <p>Large Language Models (LLMs) spanning language, vision, audio, and other modalities are rapidly transforming the AI landscape, enabling a wide range of downstream applications. As demand for more capable models continues to rise, both model scale and training data volume have expanded substantially. Training, fine-tuning, and serving such models increasingly rely on large-scale high-performance computing (HPC) systems and remain highly resource- and time-intensive.</p>
+
+            <p>Data compression has emerged as a promising means of mitigating communication and data-movement overhead in distributed and parallel environments for modern AI and big-data workloads. Because data movement across the Internet, inter-node networks, and system interconnects has become a major determinant of both runtime and energy consumption, efficient mechanisms for data transfer and analysis are increasingly critical.</p>
+
+            <p>This workshop addresses key research challenges in reducing data-movement and communication costs for large-scale AI and big-data applications, including model training, fine-tuning, inference, and emerging LLM-based agent and multi-agent systems.</p>
+
+            <p>Topics of interest include but are not limited to:</p>
+
+            <p>&bull; Data Compression Methods</p>
+            <p>&ensp;&ensp;&deg; Compression Techniques for Structured and Unstructured Scientific Data</p>
+            <p>&ensp;&ensp;&deg; Image, Video, and Multimedia Data Compression</p>
+            <p>&ensp;&ensp;&deg; Time-series Data Compression</p>
+            <p>&ensp;&ensp;&deg; Textual Data Compression (Natural Language, Logs)</p>
+            <p>&ensp;&ensp;&deg; Quantization and Data Reduction</p>
+            <p>&ensp;&ensp;&deg; Predictive Coding and Transform-based Compression</p>
+            <p>&ensp;&ensp;&deg; Dictionary-based and Entropy-based Compression</p>
+            <p>&ensp;&ensp;&deg; Tensor Decomposition and Low-rank Approximations</p>
+            <p>&ensp;&ensp;&deg; Compression-aware Data Mining and Machine Learning</p>
+            <p>&ensp;&ensp;&deg; Compression for Accelerating Data Analytics</p>
+
+            <p>&bull; Applying Data Compression in AI-Related Applications and Systems</p>
+            <p>&ensp;&ensp;&deg; Large-Scale AI Model Training</p>
+            <p>&ensp;&ensp;&deg; Large-Scale AI Model Fine-Tuning</p>
+            <p>&ensp;&ensp;&deg; Large-Scale AI Inference/Serving</p>
+            <p>&ensp;&ensp;&deg; LLMs-Based Agent and Multi-Agent System Designing</p>
+            <p>&ensp;&ensp;&deg; Data Compression for Communication Reduction</p>
+            <p>&ensp;&ensp;&deg; Data Compression to Reduce Memory and Storage Overhead</p>
+
+            <p>&bull; Hardware Co-Design for Applying Data Compression in Emerging AI Applications, Big Data Applications, and Quantum Computing</p>
+            <p>&ensp;&ensp;&deg; GPUs</p>
+            <p>&ensp;&ensp;&deg; FPGAs</p>
+            <p>&ensp;&ensp;&deg; Quantum Computing Platforms</p>
+            <p>&ensp;&ensp;&deg; CXL: Compute Express Link</p>
+            <p>&ensp;&ensp;&deg; PIM: Process in Memory</p>
+            <p>&ensp;&ensp;&deg; RISC-V</p>
+            <p>&ensp;&ensp;&deg; ARM</p>
+        </div>
+    </section>
+
+    <!-- Submission Section -->
+    <section id="submission">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Submission</h2>
+                    <h4 class="section-subheading text-muted"></h4>
+                </div>
+            </div>
+            <h2>Important Dates</h2>
+
+            <p>Selection of program committee members: <b><font color="#8E236B">June 1, 2026 (AoE)</font></b></p>
+            <p>Paper submission deadline: <b><font color="#8E236B">June 10, 2026 (AoE)</font></b></p>
+            <p>Author notification: <b><font color="#8E236B">June 30, 2026 (AoE)</font></b></p>
+            <p>Camera-ready final papers: <b><font color="#8E236B">July 30, 2026 (AoE)</font></b></p>
+
+            <h2>Submissions</h2>
+
+            <p>&bull; Papers should be submitted electronically on the ICPP submission system:</p>
+            <p><a href="https://ssl.linklings.net/conferences/icpp/">https://ssl.linklings.net/conferences/icpp/</a></p>
+
+            <p>&bull; Paper submission must be in ACM format:</p>
+            <p><a href="https://www.acm.org/publications/proceedings-template">https://www.acm.org/publications/proceedings-template</a></p>
+
+            <p><b><font color="red">&bull; DC4AI will accept full papers (limited to 10 pages including references) and short papers (6 pages, including references and appendix).</font></b></p>
+
+            <p>&bull; Submitted papers will be evaluated by at least 3 reviewers based on technical merits.</p>
+
+            <p>&bull; DC4AI encourages submissions to provide artifact description &amp; evaluation.</p>
+
+            <p><b><font color="red">&bull; Accepted papers that are presented in the workshop will be published in the ACM Digital Library.</font></b></p>
+        </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section id="committee" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-heading">Committee Members</h1>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <h2>Workshop Organizers</h2>
+
+            <p><a href="https://faculty.eng.ufl.edu/xiaoyi-lu/" target="_blank">Xiaoyi Lu</a>, University of Florida, USA (xiaoyilu@ufl.edu)</p>
+            <p><a href="https://www.stevens.edu/profile/xyu38" target="_blank">Xiaodong Yu</a>, Stevens Institute of Technology, USA (xyu38@stevens.edu)</p>
+            <p><a href="https://zhaorui-zhang.github.io/" target="_blank">Zhaorui Zhang</a>, Hong Kong Polytechnic University, Hong Kong (zhaorui.zhang@polyu.edu.hk)</p>
+
+            <h2>Invited Speaker</h2>
+
+            <p><a href="https://web.cels.anl.gov/~sdi/" target="_blank">Sheng Di</a>, Argonne National Laboratory, USA (sdi1@anl.gov)</p>
+
+        </div>
+    </section>
+
+    <!-- CFP / About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="../css/2016_style/img/icon-about.jpeg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Call for Papers</h4>
+                                </div>
+                                <div class="timeline-heading">
+                                    <p class="text-muted">Learn more about the topics and submission guidelines</p>
+                                </div>
+                                <a href="#abstract" class="page-scroll btn btn-sm">Learn More</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prior Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Prior Workshops</h2>
+                    <h3 class="section-subheading text-muted">Related workshops organized by committee members</h3>
+                    <h3><a href="https://drbsd.github.io/drbsd2024.html">DRBSD-10</a> &nbsp;&nbsp;
+                        <a href="https://drbsd.github.io/drbsd2023.html">DRBSD-9</a> &nbsp;&nbsp;
+                        <a href="https://drbsd.github.io/drbsd2022.html">DRBSD-8</a>
+                    </h3>
+                    <h3><a href="https://drbsd.github.io/drbsd2021.html">DRBSD-7</a> &nbsp;&nbsp;
+                        <a href="https://web.njit.edu/~qliu/drbsd6.html">DRBSD-6</a> &nbsp;&nbsp;
+                        <a href="https://web.njit.edu/~qliu/drbsd5.html">DRBSD-5</a>
+                    </h3>
+                    <h3>
+                        <a href="https://web.njit.edu/~qliu/drbsd4.html">DRBSD-4</a> &nbsp;&nbsp;
+                        <a href="https://web.njit.edu/~qliu/drbsd3.html">DRBSD-3</a> &nbsp;&nbsp;
+                        <a href="https://web.njit.edu/~qliu/drbsd2.html">DRBSD-2</a>
+                    </h3>
+                    <h3>
+                        <a href="https://web.njit.edu/~qliu/drbsd.html">DRBSD-1</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {% include 2016_data/footer.html %}
-    {% include 2017_data/speakers_info.html %}
     {% include 2016_data/js.html %}
 
     </body>

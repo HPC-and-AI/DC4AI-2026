@@ -3,21 +3,24 @@
   width: 100%;
   white-space: pre-wrap;
   word-wrap: break-word;
+  border-collapse: separate;
+  border-spacing: 0 6px;
 
   td {
     white-space: pre-wrap;
     word-wrap: break-word;
     text-overflow: ellipsis;
+    vertical-align: middle;
   }
   /* Column widths are based on these cells */
   .agenda-time {
-    width: 40%;
+    width: 22%;
+    font-weight: bold;
   }
-  .agenda-actiity {
-     width: 60%;
+  .agenda-activity {
+     width: 78%;
   }
   th, td {
-    border: 1px solid #00283c;
     font-size: 120%;
   }
   th {
@@ -28,6 +31,9 @@
   td {
     text-align: center;
     font-size: 110%;
+    padding: 18px 16px;
+    border: none;
+    border-radius: 4px;
     a {
         color: #ff6738;
         text-decoration: none;
@@ -38,26 +44,32 @@
   }
   td + td {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
+  }
+  tr:nth-child(even) td {
+    background-color: #cce5ff;
+  }
+  tr:nth-child(odd) td {
+    background-color: #e8f4f8;
   }
 }
 
 @media screen and (max-width: 760px){
     .agenda {
         .agenda-time {
-            width: 40%;
+            width: 35%;
         }
-        .agenda-actiity {
-            width: 60%;
+        .agenda-activity {
+            width: 65%;
         }
         td, th {
             font-size: 100%;
         }
         td {
-            padding-left: 0px;
+            padding: 12px 8px;
         }
         td + td {
-            padding-left: 10px;
+            padding-left: 12px;
         }
     }
 }

@@ -1,7 +1,7 @@
-title: Your Title
+title: DC4AI
 description: > # this means to ignore newlines until "baseurl:"
-  Your description
-baseurl: "" # the subpath of your site, e.g. /blog
+  The International Workshop on Data Compression for AI and Big Data Applications (DC4AI) in conjunction with ICPP 2026
+baseurl: "/DC4AI-2026" # the subpath of your site, e.g. /blog
 url: "https://HPC-and-AI.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
